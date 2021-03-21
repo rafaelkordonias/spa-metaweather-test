@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+.App {
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  justify-content: center;
+  padding: 10%;
+}
+
+.Location-result {
+  text-align: start;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(216, 216, 216);
+
+}
+
+.modal-wrapper {
+  text-align: start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 30%;
+  width: 60%;
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 101;
+  padding: 40px;
+  line-height: 10px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 3rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.forecast-wrapper {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.forecast-item {
+  line-height: 5px;
+}
+
+.forecast-item p {
+  font-size: 0.9rem;
+}
+
+.forecast-img-container {
+  margin-top: 10px;
+}
+
+.forecast-img {
+  width: 40px;
+  height: 40px;
+}
+
+.weather-tabs {
+  text-align: center;
+  display: flex;
+}
+
+.weather-tab:first-child {
+  cursor: pointer;
+}
+
+.weather-tab {
+  cursor: pointer;
+  margin-left: 1rem;
+
+}
+
+.weather-tab-indicator {
+  height: .25rem;
+  width: 100%;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+*:focus {
+  outline: none;
+}
+
+.searchBar {
+  font-size:1.6rem;
+  width: 40rem;
+  padding: 1rem;
+  height: 1.8rem;
+  border-radius: 15px;
+  border: 1px solid; 
+  border-color: rgb(218, 218, 218)
+}
+
+.list-view {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42rem;
+  border-radius: 10px;;
+  border: 1px solid; 
+  border-color: rgb(218, 218, 218)
+}
+
+.list-item-label {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.list-item-label:hover {
+  color: tomato;
+}
